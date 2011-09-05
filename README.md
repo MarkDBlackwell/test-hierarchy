@@ -7,3 +7,6 @@ For users of the Test/Unit system.
 In order that the file, 'test/test_helper.rb' not contain a grab-bag of shared, uncategorized test methods.
 
 This code automatically 'requires' all files named, '_shared.rb' under the directory, 'test/'.
+
+Copyright (c) 2011 Mark D. Blackwell. See [MIT-LICENSE](MIT-LICENSE) for details.
+
