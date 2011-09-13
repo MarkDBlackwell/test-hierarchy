@@ -1,31 +1,32 @@
 #test-hierarchy
-A Rails plugin to facilitate the hierarchizing of shared test methods.
+A Rails plugin allowing a hierarchy of test helper methods.
 
-In order that your file, 'test/test_helper.rb' not contain a grab-bag of 
-shared, uncategorized test methods, this plugin automatically 'requires' 
-any files you name, '_shared.rb'.
+So that 'test/test_helper.rb' doesn't contain a grab-bag of shared, 
+uncategorized test helper methods, this plugin automatically 'requires' 
+any files named, '_shared.rb'.
 
-When running a full test suite, all those under directory, 'test/' are 
-found.
+When running a full test suite, all (in the tree) under directory, 
+'test/' are found.
 
-When running a single test file, only those under that file's 
-subdirectory, e.g., test/unit or test/functional, are found.
+When running a single test file, only those (in the tree) under that 
+file's test subdirectory, e.g., test/unit or test/functional, are found.
 
 ##Example Usage
-Hierarchize your test methods into files named, '_shared.rb' under the 
-directory, 'test'.
+Appropriately place your test helper methods into files named, 
+'_shared.rb' in the 'test' filesystem tree.
 
 ##How To Install
 In your Rails application:
 
+```bash
 rails install plugin git://github.com/MarkDBlackwell/test-hierarchy.git
+```
 
 ##Requirements
+The plugin works with Test/Unit -- maybe with other test systems, too.
 
-The plugin is for users of the Test/Unit system.
-
-Insert this (uncommented, single) line in your file, 
-test/test_helper.rb, right above, 'class ActiveSupport::TestCase':
+In your file, 'test/test_helper.rb', right above the line, 'class 
+ActiveSupport::TestCase' insert this (uncommented, single) line:
 
 ```ruby
 TestHierarchy.new
