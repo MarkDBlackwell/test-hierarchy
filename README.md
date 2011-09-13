@@ -3,7 +3,8 @@ A Rails plugin allowing a hierarchy of test helper methods.
 
 So that 'test/test_helper.rb' doesn't contain a shared grab-bag of 
 uncategorized test helper methods (bad for understanding single tests), 
-this plugin automatically 'requires' any files named, '_shared.rb'.
+this plugin automatically 'requires' any files named, '_shared.rb'. 
+(Plus, of course, you can use private methods in single test files.)
 
 When running a full test suite, all those files in the filesystem tree 
 of 'test' are found.
