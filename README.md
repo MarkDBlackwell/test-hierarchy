@@ -1,4 +1,4 @@
-#test-hierarchy
+# test-hierarchy
 A Rails plugin allowing a hierarchy of test helper methods.
 
 So that 'test/test_helper.rb' doesn't contain a shared grab-bag of 
@@ -13,18 +13,18 @@ When running a single test file, only those under that file's test
 subdirectory, e.g., test/unit or test/functional, are found. This aids 
 classifying the helper methods.
 
-##Example Usage
+## Example Usage
 Place your test helper methods appropriately into files named, 
 '_shared.rb' in the filesystem tree of 'test'.
 
-##How To Install
+## How To Install
 In your Rails application:
 
 ```bash
 rails install plugin git://github.com/MarkDBlackwell/test-hierarchy.git
 ```
 
-##Requirements
+## Requirements
 The plugin works with Test/Unit -- and maybe it will work with other 
 test systems, too.
 
@@ -35,7 +35,7 @@ ActiveSupport::TestCase' insert:
 TestHierarchy.new
 ```
 
-##Testing
+## Testing
 Developed with Rails 3.0.9 & Ruby 1.8.7, it was tested by my app, before 
 making it a plugin.
 
